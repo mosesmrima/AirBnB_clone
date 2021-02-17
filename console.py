@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-""" module contains the console implementation"""
 import cmd
 from models.base_model import BaseModel
 from models import storage
+""" module contains the console implementation"""
 
 
 def parse(arg):
@@ -46,7 +46,6 @@ class HBNBCommand(cmd.Cmd):
         args = parse(arg)
         objdict = storage.all()
         if len(args) == 0:
-            print(args)
             print("** class name missing **")
         elif args[0] not in HBNBCommand.__classes:
             print("** class doesn't exist **")
