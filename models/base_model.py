@@ -6,11 +6,18 @@ from datetime import datetime
 
 class BaseModel:
     """Represents the base model class for the HBnB console"""
-    def __init__(self):
+    def __init__(self, *args, **kwargs):
         """__init__ method called by every new instance"""
         self.id = uuid4()
         self.created_at = datetime.today()
         self.updated_at = datetime.today()
+        if len(kwargs) != 0:
+            for i, j in kwargs.items():
+                if i == "created_at" or i == "updated_at":
+                    t_form = "%Y-%m-%dT%H:%M:%S.%f"
+                    self.__dict__[i] = datetime.strptime(j, t_form)
+                else:
+                    self.__dict__[i] = j
 
     def __str__(self):
         """Return the print/str representation of the BaseModel instance."""
