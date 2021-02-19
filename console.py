@@ -16,6 +16,9 @@ class HBNBCommand(cmd.Cmd):
         print("")
         return True
 
+    def emptyline(self) -> bool:
+        pass
+
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
