@@ -2,6 +2,7 @@
 """This module contains one class, BaseModel"""
 from uuid import uuid4
 from datetime import datetime
+import models
 
 
 class BaseModel:
@@ -28,6 +29,7 @@ class BaseModel:
     def save(self):
         """Updates updated_at with the current datetime"""
         self.updated_at = datetime.today()
+        models.storage.save()
 
     def to_dict(self):
         """
