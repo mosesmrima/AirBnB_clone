@@ -8,25 +8,22 @@ which serializes and deserializes instances to JSON file
 
 
 class FileStorage:
-    """
-     Represents a storage engine to serialize and deserialize
-     objects to a JSON file
-    """
+    """This represents the file storage engine for HBnB project"""
     __file_path = "file.json"
     __objects = {}
 
     def all(self):
-        """returns all entries of __objects"""
-        return FileStorage.__objects
+        """this method reurns the __objects dictinary"""
+        return self.__objects
 
     def new(self, obj):
-        """Adds a new instance to __objects"""
+        """sets in obj object in __ojects dict"""
         clsname = obj.__class__.__name__
         FileStorage.__objects["{}.{}".format(clsname, obj.id)] = obj
 
     def save(self):
         """Serialize __objects to the JSON file __file_path."""
-        odict = FileStorage.__objects
+        odict = FileStorage.__objects.copy()
         objdict = {obj: odict[obj].to_dict() for obj in odict.keys()}
         with open(FileStorage.__file_path, "w") as f:
             json.dump(objdict, f)
@@ -37,7 +34,8 @@ class FileStorage:
             with open(FileStorage.__file_path) as f:
                 objdict = json.load(f)
                 for o in objdict.values():
-                    obj = BaseModel(**o)
-                    FileStorage.new(self, obj)
+                    cls_name = o["__class__"]
+                    del o["__class__"]
+                    self.new(eval(cls_name)(**o))
         except FileNotFoundError:
             return
