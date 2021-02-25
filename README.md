@@ -36,6 +36,7 @@ Prints the string representations of all instances of a given class. If no
 class name is provided, the command prints all instances of every class.
 
 ```
+
 * **update**
   * Usage: `update <class> <id> <attribute name> "<attribute value>"` or
 `<class>.update(<id>, <attribute name>, <attribute value>)` or `<class>.update(
