@@ -6,7 +6,6 @@ from shlex import split
 from models import storage
 from models.base_model import BaseModel
 
-
 def parse(arg):
     curly_braces = re.search(r"\{(.*?)\}", arg)
     brackets = re.search(r"\[(.*?)\]", arg)
@@ -54,7 +53,9 @@ class HBNBCommand(cmd.Cmd):
         elif args[0] not in HBNBCommand.__classes:
             print("** class doesn't exist **")
         else:
-            print(eval(args[0])().id)
+            new = BaseModel()
+            #print(eval(args[0])().id)
+            print(new.id)
             storage.save()
 
     def do_show(self, arg):
