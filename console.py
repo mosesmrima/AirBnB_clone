@@ -53,9 +53,7 @@ class HBNBCommand(cmd.Cmd):
         elif args[0] not in HBNBCommand.__classes:
             print("** class doesn't exist **")
         else:
-            new = BaseModel()
-            #print(eval(args[0])().id)
-            print(new.id)
+            print(eval(args[0])().id)
             storage.save()
 
     def do_show(self, arg):
