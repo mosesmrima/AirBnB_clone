@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import json
 from models.base_model import BaseModel
+from models.user import User
 """
 This module contains the file storage class
 which serializes and deserializes instances to JSON file
