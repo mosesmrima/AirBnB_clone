@@ -4,6 +4,7 @@ import cmd
 import re
 from shlex import split
 from models import storage
+from models.base_model import BaseModel
 
 
 def parse(arg):
