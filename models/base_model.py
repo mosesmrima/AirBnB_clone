@@ -19,6 +19,8 @@ class BaseModel:
                     self.__dict__[i] = datetime.strptime(j, tform)
                 else:
                     self.__dict__[i] = j
+        else:
+            models.storage.new(self)
 
     def __str__(self):
         """Return the print/str representation of the BaseModel instance."""
