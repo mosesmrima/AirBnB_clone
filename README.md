@@ -34,13 +34,6 @@ To use it non-interactivley, pipe any of the valid commands to console.py.
 Prints the string representation of a class instance based on a given id.
 
 ```
-* **destroy**
-  * Usage: `destroy <class> <id>` or `<class>.destroy(<id>)`
-
-Deletes a class instance based on a given id. The storage file `file.json` 
-is updated accordingly.
-
-```
 
 * **all**
   * Usage: `all` or `all <class>` or `<class>.all()`
