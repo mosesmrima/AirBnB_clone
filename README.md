@@ -11,7 +11,6 @@ Ths class has three attributes:<br>
 1.id<br>
 2.created_at: type datetime
 3.updated_at: type datetime
-
 ###FileStorage
 Inherits from BaseClass.
 This represnts the storage engine that handles serialization and deserialization of data.
