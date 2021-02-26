@@ -9,9 +9,10 @@ This project is the first piece to cloning AirBnB. This is a back-end API that\
 This is the baseclass of the model from which all other classes inherit from.<br>
 Ths class has three attributes:<br>
 1.id<br>
-2.created_at: type datetime
-3.updated_at: type datetime
-###FileStorage
+2.created_at: type datetime<br>
+3.updated_at: type datetime<br>
+
+#FileStorage
 Inherits from BaseClass.
 This represnts the storage engine that handles serialization and deserialization of data.
 It serialiazes objects to json and saves them to a file. It also deserializes json data to objects
