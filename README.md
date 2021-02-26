@@ -26,6 +26,8 @@ To use it non-interactivley, pipe any of the valid commands to console.py.
 
 
 <h3>Valid Console Commands</h3><br>
+```
+
 * **show**
   * Usage: `show <class> <id>` or `<class>.show(<id>)`
 
