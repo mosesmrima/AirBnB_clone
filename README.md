@@ -56,3 +56,11 @@ key/value attribute pair, only "simple" attributes can be updated (ie. not
 providing a dictionary.
 
 ```
+```
+
+* **show**
+  * Usage: `show <class> <id>` or `<class>.show(<id>)`
+
+Prints the string representation of a class instance based on a given id.
+
+```
