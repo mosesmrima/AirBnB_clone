@@ -3,7 +3,7 @@
 
 <b align="center">Description</b>
 This project is the first piece to cloning AirBnB. This is a back-end API that\
- (the console).
+ (the console) handles objects and data.
 <h3>Classes</h3>
 <h3>BaseModel</h3>
 This is the baseclass of the model from which all other classes inherit from.<br>
