@@ -1,7 +1,7 @@
 <h1 align="center">HolbertonBnB AirBnB clone</h1>
 <p align="center">The Console</p>
 
-##Description
+<b>escription</b>
 This project is the first piece to cloning AirBnB. This is a back-end API that\
  (the console).
 ##Classes
