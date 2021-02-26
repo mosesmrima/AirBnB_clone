@@ -1,31 +1,31 @@
 <h1 align="center">HolbertonBnB AirBnB clone</h1>
 <p align="center">The Console</p>
 
-<b>escription</b>
+<b align="center">Description</b>
 This project is the first piece to cloning AirBnB. This is a back-end API that\
  (the console).
-##Classes
-###BaseModel
+<h3>Classes</h3>
+<h3>BaseModel</h3>
 This is the baseclass of the model from which all other classes inherit from.<br>
 Ths class has three attributes:<br>
 1.id<br>
 2.created_at: type datetime<br>
 3.updated_at: type datetime<br>
 
-#FileStorage<br>
+<h3>FileStorage</h3><br>
 Inherits from BaseClass.
 This represnts the storage engine that handles serialization and deserialization of data.
 It serialiazes objects to json and saves them to a file. It also deserializes json data to objects
 
-###Amenity, City, Review< State, User:<br>
+<h3>Amenity, City, Review< State, User:</h3><br>
 Thses classes inherit from Baseclass and represent the data to be handled
 
-##Usage<br>
+<h3>Usage</h3><br>
 To use the console in interactive mode, run the file console.py<br>
 To use it non-interactivley, pipe any of the valid commands to console.py.
 
 
-##Valid Console Commands<br>
+<h3>Valid Console Commands</h3><br>
 * **show**
   * Usage: `show <class> <id>` or `<class>.show(<id>)`
 
