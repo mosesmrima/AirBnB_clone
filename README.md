@@ -12,20 +12,20 @@ Ths class has three attributes:<br>
 2.created_at: type datetime<br>
 3.updated_at: type datetime<br>
 
-#FileStorage
+#FileStorage<br>
 Inherits from BaseClass.
 This represnts the storage engine that handles serialization and deserialization of data.
 It serialiazes objects to json and saves them to a file. It also deserializes json data to objects
 
-###Amenity, City, Review< State, User:
+###Amenity, City, Review< State, User:<br>
 Thses classes inherit from Baseclass and represent the data to be handled
 
-##Usage
+##Usage<br>
 To use the console in interactive mode, run the file console.py<br>
 To use it non-interactivley, pipe any of the valid commands to console.py.
 
 
-##Valid Console Commands
+##Valid Console Commands<br>
 * **show**
   * Usage: `show <class> <id>` or `<class>.show(<id>)`
 
