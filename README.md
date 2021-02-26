@@ -17,8 +17,8 @@ Inherits from BaseClass.
 This represnts the storage engine that handles serialization and deserialization of data.
 It serialiazes objects to json and saves them to a file. It also deserializes json data to objects
 
-<h3>Amenity, City, Review< State, User:</h3><br>
-Thses classes inherit from Baseclass and represent the data to be handled
+<h3>Amenity, City, Review, State, User:</h3><br>
+These classes inherit from Baseclass and represent the data to be handled
 
 <h3>Usage</h3><br>
 To use the console in interactive mode, run the file console.py<br>
