@@ -35,6 +35,8 @@ Prints the string representation of a class instance based on a given id.
 
 ```
 
+```
+
 * **all**
   * Usage: `all` or `all <class>` or `<class>.all()`
 
