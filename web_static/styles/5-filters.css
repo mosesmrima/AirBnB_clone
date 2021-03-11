@@ -1,3 +1,8 @@
+/*
+ * === Filters class style ===
+ */
+
+/* Filters style */
 .filters {
   background-color: #fff;
   border: 1px solid #ddd;
@@ -19,7 +24,7 @@
   width: 20%;
 }
 
-/* Search button on hover*/
+/* Search button hover opacity */
 .filters button:hover {
   background-color: rgba(255, 90, 95, .9);
 }
@@ -37,28 +42,19 @@
   border-right: 1px solid #ddd;
 }
 
+/*
+ * --- Places header style ---
+ */
 
-/* Headings box sizing */
-.filters h2,
-.filters h3,
-.filters h4 {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
-}
+ .filters h3 {
+   font-weight: 600;
+   height: 20%;
+   padding: 15.5px 0 0 35px;
+ }
 
-/* h3 style */
-.filters h3 {
-  font-size: 1.17em;
-  font-weight: 600;
-  height: 50%;
-  padding: 15.5px 0 0 30px;
-}
-
-/* h4 style */
-.filters h4 {
-  font-size: 14px;
-  font-weight: 400;
-  height: 50%;
-  padding: 4.5px 0 12px 30px;
-}
+ /* Header 4 style */
+ .filters h4 {
+   font-size: 14px;
+   font-weight: 400;
+   padding: 4px 0 0 35px;
+ }
