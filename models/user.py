@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 """ this module contains one class """
 
 from models.base_model import BaseModel
